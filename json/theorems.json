@@ -1,0 +1,202 @@
+[
+    {
+      "id": 1,
+      "name": "Pythagorean Theorem",
+      "authorship": "Unknown (traditionally attributed to Pythagoras)",
+      "date": "Unknown (at least 6th century BCE)",
+      "proven": true,
+      "latex-expression": "\\forall a,b,c \\in \\mathbb{R}^+ : a^2 + b^2 = c^2 \\iff \\text{triangle with sides } a,b,c \\text{ is right-angled}",
+      "statement": "A triangle is right-angled if and only if the square of the length of its hypotenuse is equal to the sum of squares of the lengths of its other two sides.",
+      "breakdown": "a, b, c are positive real numbers representing side lengths of a triangle. The theorem establishes equivalence between the Pythagorean equation and the right-angledness of the triangle."
+    },
+    {
+      "id": 2,
+      "name": "Fundamental Theorem of Arithmetic",
+      "authorship": "Euclid (first known proof)",
+      "date": "circa 300 BCE",
+      "proven": true,
+      "latex-expression": "\\forall n \\in \\mathbb{N}, n > 1, \\exists! p_1, ..., p_k \\in \\mathbb{P}, e_1, ..., e_k \\in \\mathbb{N} : n = p_1^{e_1} \\cdot ... \\cdot p_k^{e_k}",
+      "statement": "Every integer greater than 1 is either a prime number itself or can be represented as the product of prime numbers in a unique way, up to the order of the factors.",
+      "breakdown": "n is any natural number greater than 1, p_i are distinct primes, e_i are positive integers. ∃! denotes unique existence, ℕ is the set of natural numbers, ℙ is the set of prime numbers."
+    },
+    {
+      "id": 3,
+      "name": "Euler's Identity",
+      "authorship": "Leonhard Euler",
+      "date": "1748",
+      "proven": true,
+      "latex-expression": "e^{i\\pi} + 1 = 0",
+      "statement": "The exponential function evaluated at the product of i (the imaginary unit) and π (pi), plus 1, equals 0.",
+      "breakdown": "e is Euler's number (≈ 2.71828), i is the imaginary unit (i² = -1), π is the ratio of a circle's circumference to its diameter (≈ 3.14159)."
+    },
+    {
+      "id": 4,
+      "name": "Fermat's Last Theorem",
+      "authorship": "Andrew Wiles (proof)",
+      "date": "1995 (proven)",
+      "proven": true,
+      "latex-expression": "\\forall n \\in \\mathbb{N}, n > 2 : \\nexists x,y,z \\in \\mathbb{Z}^+ : x^n + y^n = z^n",
+      "statement": "For any integer n greater than 2, there are no positive integers x, y, and z that satisfy the equation x^n + y^n = z^n.",
+      "breakdown": "n is any natural number greater than 2, x, y, z are positive integers. ∄ denotes non-existence, ℕ is the set of natural numbers, ℤ⁺ is the set of positive integers."
+    },
+    {
+      "id": 5,
+      "name": "Central Limit Theorem",
+      "authorship": "Various (including de Moivre, Laplace, Lyapunov)",
+      "date": "Fully formalized by 1920s",
+      "proven": true,
+      "latex-expression": "\\lim_{n \\to \\infty} P\\left(\\frac{\\overline{X}_n - \\mu}{\\sigma/\\sqrt{n}} \\leq x\\right) = \\Phi(x)",
+      "statement": "Given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and variance, will be approximately normally distributed, regardless of the underlying distribution.",
+      "breakdown": "X̄ₙ is the sample mean, μ is the population mean, σ is the population standard deviation, n is the sample size, Φ(x) is the standard normal cumulative distribution function."
+    },
+    {
+      "id": 6,
+      "name": "Fundamental Theorem of Calculus",
+      "authorship": "Isaac Newton and Gottfried Leibniz",
+      "date": "Late 17th century",
+      "proven": true,
+      "latex-expression": "\\int_a^b f'(x) dx = f(b) - f(a)",
+      "statement": "The definite integral of a function's derivative over an interval is equal to the difference of the function's values at the endpoints of the interval.",
+      "breakdown": "f is a continuous function on [a,b] and f' is its derivative. The theorem establishes the relationship between differentiation and integration."
+    },
+    {
+      "id": 7,
+      "name": "Gödel's Incompleteness Theorems",
+      "authorship": "Kurt Gödel",
+      "date": "1931",
+      "proven": true,
+      "latex-expression": "\\exists \\phi (\\text{Con}(T) \\implies (T \\nvdash \\phi \\land T \\nvdash \\neg\\phi))",
+      "statement": "For any consistent formal system F within which a certain amount of elementary arithmetic can be carried out, there are statements of the language of F which can neither be proved nor disproved in F.",
+      "breakdown": "Con(T) denotes the consistency of theory T, φ is a statement in the language of T, ⊬ denotes 'does not prove'."
+    },
+    {
+      "id": 8,
+      "name": "Cauchy-Schwarz Inequality",
+      "authorship": "Augustin-Louis Cauchy and Hermann Schwarz",
+      "date": "Mid-19th century",
+      "proven": true,
+      "latex-expression": "|\\langle u, v \\rangle|^2 \\leq \\langle u, u \\rangle \\cdot \\langle v, v \\rangle",
+      "statement": "The absolute value of the inner product of two vectors is less than or equal to the product of their norms.",
+      "breakdown": "u and v are vectors in an inner product space, ⟨·,·⟩ denotes the inner product."
+    },
+    {
+      "id": 9,
+      "name": "Law of Large Numbers",
+      "authorship": "Jacob Bernoulli",
+      "date": "1713",
+      "proven": true,
+      "latex-expression": "P\\left(\\lim_{n \\to \\infty} \\frac{1}{n}\\sum_{i=1}^n X_i = \\mu\\right) = 1",
+      "statement": "The average of the results obtained from a large number of trials should be close to the expected value, and will tend to become closer as more trials are performed.",
+      "breakdown": "X_i are independent and identically distributed random variables with expected value μ. P denotes probability."
+    },
+    {
+      "id": 10,
+      "name": "Quadratic Reciprocity",
+      "authorship": "Carl Friedrich Gauss",
+      "date": "1801",
+      "proven": true,
+      "latex-expression": "\\left(\\frac{p}{q}\\right)\\left(\\frac{q}{p}\\right) = (-1)^{\\frac{(p-1)(q-1)}{4}}",
+      "statement": "For any two distinct odd prime numbers p and q, the Legendre symbols (p/q) and (q/p) are equal if and only if at least one of p or q leaves the remainder 1 when divided by 4.",
+      "breakdown": "(p/q) is the Legendre symbol, p and q are distinct odd primes."
+    },
+    {
+      "id": 11,
+      "name": "Riemann Hypothesis",
+      "authorship": "Bernhard Riemann",
+      "date": "1859 (conjectured)",
+      "proven": false,
+      "latex-expression": "\\zeta(s) = 0 \\implies \\Re(s) = \\frac{1}{2} \\text{ or } s = -2n, n \\in \\mathbb{N}",
+      "statement": "All non-trivial zeros of the Riemann zeta function have real part equal to 1/2.",
+      "breakdown": "ζ(s) is the Riemann zeta function, s is a complex number, ℜ(s) denotes the real part of s, n is a natural number."
+    },
+    {
+      "id": 12,
+      "name": "Green's Theorem",
+      "authorship": "George Green",
+      "date": "1828",
+      "proven": true,
+      "latex-expression": "\\oint_C (L dx + M dy) = \\iint_D \\left(\\frac{\\partial M}{\\partial x} - \\frac{\\partial L}{\\partial y}\\right) dx dy",
+      "statement": "The line integral of a vector field over a closed simple curve in a plane is equal to the double integral of the vector field's curl over the region enclosed by the curve.",
+      "breakdown": "C is a positively oriented, piecewise smooth, simple closed curve in a plane, D is the region enclosed by C, L and M are functions of (x,y) with continuous partial derivatives."
+    },
+    {
+      "id": 13,
+      "name": "Fundamental Theorem of Algebra",
+      "authorship": "Carl Friedrich Gauss",
+      "date": "1799",
+      "proven": true,
+      "latex-expression": "\\forall P \\in \\mathbb{C}[X], \\deg(P) > 0, \\exists z \\in \\mathbb{C} : P(z) = 0",
+      "statement": "Every non-constant polynomial with complex coefficients has at least one complex root.",
+      "breakdown": "P is a polynomial, ℂ[X] is the ring of polynomials with complex coefficients, deg(P) is the degree of P, ℂ is the set of complex numbers."
+    },
+    {
+      "id": 14,
+      "name": "Bayes' Theorem",
+      "authorship": "Thomas Bayes",
+      "date": "1763",
+      "proven": true,
+      "latex-expression": "P(A|B) = \\frac{P(B|A)P(A)}{P(B)}",
+      "statement": "The probability of an event A given B is equal to the probability of B given A times the probability of A, divided by the probability of B.",
+      "breakdown": "P(A|B) is the conditional probability of A given B, P(A) and P(B) are the probabilities of A and B respectively."
+    },
+    {
+      "id": 15,
+      "name": "Gauss-Bonnet Theorem",
+      "authorship": "Carl Friedrich Gauss and Pierre Ossian Bonnet",
+      "date": "1848",
+      "proven": true,
+      "latex-expression": "\\int_M K dA + \\oint_{\\partial M} k_g ds = 2\\pi\\chi(M)",
+      "statement": "The integral of the Gaussian curvature over a compact 2-dimensional Riemannian manifold, plus the integral of the geodesic curvature over its boundary, is equal to 2π times the Euler characteristic of the manifold.",
+      "breakdown": "M is a compact 2D Riemannian manifold, K is the Gaussian curvature, ∂M is the boundary of M, k_g is the geodesic curvature, χ(M) is the Euler characteristic of M."
+    },
+    {
+      "id": 16,
+      "name": "Brouwer Fixed-Point Theorem",
+      "authorship": "Luitzen Egbertus Jan Brouwer",
+      "date": "1909",
+      "proven": true,
+      "latex-expression": "\\forall f : D^n \\to D^n \\text{ continuous }, \\exists x \\in D^n : f(x) = x",
+      "statement": "Every continuous function from a convex compact subset of a Euclidean space to itself has a fixed point.",
+      "breakdown": "D^n is the n-dimensional closed unit ball, f is a continuous function, x is a point in D^n."
+    },
+    {
+      "id": 17,
+      "name": "Stokes' Theorem",
+      "authorship": "George Gabriel Stokes",
+      "date": "1850",
+      "proven": true,
+      "latex-expression": "\\int_\\Sigma (\\nabla \\times F) \\cdot d\\Sigma = \\oint_{\\partial\\Sigma} F \\cdot dr",
+      "statement": "The surface integral of the curl of a vector field over a surface is equal to the line integral of the vector field around the boundary of the surface.",
+      "breakdown": "Σ is an oriented surface, ∂Σ is its boundary, F is a vector field, ∇ × F is the curl of F, dΣ is the surface element, dr is the line element."
+    },
+    {
+      "id": 18,
+      "name": "Residue Theorem",
+      "authorship": "Augustin-Louis Cauchy",
+      "date": "1814",
+      "proven": true,
+      "latex-expression": "\\oint_C f(z)dz = 2\\pi i \\sum_{k=1}^n \\text{Res}(f, a_k)",
+      "statement": "The contour integral of a function around a closed curve is equal to 2πi times the sum of residues of the function at the poles enclosed by the curve.",
+      "breakdown": "C is a positively oriented simple closed contour, f(z) is a function analytic on and inside C except at the poles a_1, ..., a_n, Res(f, a_k) is the residue of f at a_k."
+    },
+    {
+      "id": 19,
+      "name": "Jordan Curve Theorem",
+      "authorship": "Camille Jordan",
+      "date": "1887",
+      "proven": true,
+      "latex-expression": "\\forall C \\text{ simple closed curve in } \\mathbb{R}^2, \\mathbb{R}^2 \\setminus C \\text{ has exactly two components}",
+      "statement": "A simple closed curve in the plane divides the plane into exactly two regions: an 'inside' and an 'outside'.",
+      "breakdown": "C is a simple closed curve in ℝ², ℝ² ∖ C denotes the set of points in the plane not on C."
+    },
+    {
+      "id": 20,
+      "name": "Rolle's Theorem",
+      "authorship": "Michel Rolle",
+      "date": "1691",
+      "proven": true,
+      "latex-expression": "f:[a,b]\\to\\mathbb{R} \\text{ continuous on } [a,b], \\text{ differentiable on } (a,b), f(a)=f(b) \\implies \\exists c \\in (a,b) : f'(c) = 0",
+      "statement": "If a real-valued function f is continuous on a closed interval [a,b], differentiable on the open interval (a,b), and f(a) = f(b), then there exists a point c in the open interval (a,b) such that f'(c) = 0.",
+      "breakdown": "f is a function, [a,b] is a closed interval, (a,b) is an open interval, f' is the derivative of f."
+    }
+]
